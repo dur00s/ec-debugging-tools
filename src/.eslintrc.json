@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "globals": {
+    "Highcharts": "writable"
+  },
+  "rules": {
+    "indent": [
+      "warn",
+      4,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": "first",
+        "MemberExpression": 1,
+        "FunctionDeclaration": {
+          "parameters": "first"
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "ArrayExpression": 1,
+        "ObjectExpression": "first"
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "max-len": [
+      "error",
+      140
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "no-unused-expressions": "warn",
+    "no-unused-vars": "warn",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "require-jsdoc": "warn"
+  },
+  "ignorePatterns": [
+    "highcharts-gantt.js",
+    "draggable-points.js"
+  ]
+}
